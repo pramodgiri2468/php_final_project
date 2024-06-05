@@ -2,37 +2,9 @@
 <html>
 <head>
     <title>Teacher's Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        button {
-            padding: 10px 20px;
-            margin-right: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    
 </head>
 <body>
     <h1>Teacher's Dashboard</h1>

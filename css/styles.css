@@ -1,88 +1,168 @@
-/* CSS for different sections with shades of gray */
 
-/* General body styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333; /* Dark Gray for Text */
-    margin: 0;
-    padding: 0;
-}
+        /* CSS style for index.php */
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-/* Header styling */
-header {
-    background-color: #444; /* Darker Gray */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        h2 {
+            text-align: center;
+        }
 
-/* Footer styling */
-footer {
-    background-color: #666; /* Medium Gray */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
 
-/* Paragraph styling */
-p {
-    color: #555; /* Medium Light Gray */
-    line-height: 1.6;
-    margin: 10px 0;
-}
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-/* Heading styling */
-h1, h2, h3, h4, h5, h6 {
-    color: #333; /* Dark Gray */
-}
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-/* Button styling */
-button {
-    background-color: #888; /* Light Gray */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
+        p {
+            text-align: center;
+        }
 
-/* Button hover effect */
-button:hover {
-    background-color: #555; /* Medium Light Gray */
-    transform: translateY(-2px);
-}
+        
+        /* CSS Styles for the home.php */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
 
-/* Anchor tag styling */
-a {
-    color: #333; /* Dark Gray */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-a:hover {
-    color: #555; /* Medium Light Gray */
-}
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
 
-/* Form input styling */
-input[type="text"], input[type="password"], input[type="email"] {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    box-sizing: border-box;
-}
+        .welcome-message {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
 
-/* Form input focus effect */
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
-    border-color: #888; /* Light Gray */
-    outline: none;
-}
+        .delete-account-btn {
+            background-color: #ff4d4d;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-/* Container for layout */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+        .delete-account-btn:hover {
+            background-color: #ff3333;
+        }
+
+        /* CSS styles for register.php */
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /*CSS style for teacher.php*/
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    
+    
+    
+    

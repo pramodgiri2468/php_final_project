@@ -2,6 +2,37 @@
 <html>
 <head>
     <title>Enrollment Form</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        h2 {
+            color: #333;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input[type="email"],
+        input[type="text"] {
+            width: 300px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h2>Enrollment Form</h2>
@@ -27,6 +58,7 @@
         $teacher_email = $_POST['teacher_email'];
         
         // Query the database for student information
+        
         $student_query = "SELECT * FROM users WHERE email = '$student_email'";
         $student_result = mysqli_query($connection, $student_query);
         
