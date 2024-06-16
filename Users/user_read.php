@@ -1,14 +1,28 @@
 <?php
 include '../includes/db_connect.php';
+echo $_SESSION['is_teacher'];
 
-function getUsers() {
-    global $pdo;
-    $sql = "SELECT * FROM User";
-    $stmt = $pdo->query($sql);
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+if(isset($_session['is_teacher']) && $_session['is_teacher'] == 'Student') {
+
+}else{
+    header('Location: ../index.php');
+    exit;
 }
 
-$users = getUsers();
+function getUsers($conn) {
+    $sql = "SELECT * FROM User";
+    $result = $conn->query($sql);
+
+    // Check if the query was successful
+    if ($result === false) {
+        die("Error: " . $conn->error);
+    }
+
+    // Fetch all users
+    return $result->fetch_all(MYSQLI_ASSOC);
+}
+
+$users = getUsers($conn);
 
 include '../includes/header.php';
 ?>

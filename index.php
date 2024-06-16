@@ -43,9 +43,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Store user information in session
                 $_SESSION['username'] = $username;
                 $_SESSION['user_id'] = $user['id'];
-
+                $_SESSION['is_teacher'] = $user['is_teacher']?'Teacher':"Student";
                 // Redirect to the home page or perform any other actions
-                header('Location: home.php');
+                header('Location: users/index.php');
                 exit;
             } else {
                 // Login failed
